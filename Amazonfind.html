@@ -1,40 +1,116 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Amazon Finds Premium</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>
-        :root {
-            --primary: #FF9900;
-            --secondary: #146EB4;
-            --dark: #131A22;
-            --light: #F3F3F3;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Amazon Store</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+      color: #333;
+    }
+    header {
+      background-color: #232f3e;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    h1 {
+      margin: 0;
+    }
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 30px;
+    }
+    .card {
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      text-align: center;
+      transition: transform 0.2s ease-in-out;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    .card a {
+      display: block;
+      margin-top: 10px;
+      text-decoration: none;
+      background-color: #ff9900;
+      color: white;
+      padding: 10px;
+      border-radius: 5px;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #232f3e;
+      color: white;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
 
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
+  <header>
+    <h1>Amazon Store</h1>
+    <p>Productos recomendados y seleccionados para vos</p>
+  </header>
 
-        .animate-fadein {
-            animation: fadeIn 0.6s ease-out forwards;
-        }
+  <div class="container">
+    <div class="card">
+      <h3>📱 Tecnología</h3>
+      <p>Celulares, auriculares, laptops y más</p>
+      <a href="#">Ver productos</a>
+    </div>
+    <div class="card">
+      <h3>👕 Ropa y moda</h3>
+      <p>Las últimas tendencias para todos</p>
+      <a href="#">Ver productos</a>
+    </div>
+    <div class="card">
+      <h3>🏠 Hogar y cocina</h3>
+      <p>Todo lo que necesitás en casa</p>
+      <a href="#">Ver productos</a>
+    </div>
+    <div class="card">
+      <h3>📚 Libros</h3>
+      <p>Lecturas para todos los gustos</p>
+      <a href="#">Ver productos</a>
+    </div>
+    <div class="card">
+      <h3>🎮 Videojuegos</h3>
+      <p>Consolas, juegos y accesorios</p>
+      <a href="#">Ver productos</a>
+    </div>
+    <div class="card">
+      <h3>🧴 Belleza</h3>
+      <p>Cuidado personal y cosméticos</p>
+      <a href="#">Ver productos</a>
+    </div>
+    <div class="card">
+      <h3>🚗 Accesorios para autos</h3>
+      <p>Lo mejor para tu vehículo</p>
+      <a href="#">Ver productos</a>
+    </div>
+    <div class="card">
+      <h3>🎧 Audio y música</h3>
+      <p>Parlantes, auriculares, equipos</p>
+      <a href="#">Ver productos</a>
+    </div>
+  </div>
 
-        .product-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-        }
+  <footer>
+    © 2025 Amazon Store - Página afiliada no oficial
+  </footer>
 
-        .product-card {
-            transition: all 0.3s ease;
-        }
-
-        .dark-mode {
-            background-color: #121212;
-            color: #f5f5f5;
+</body>
+</html>            color: #f5f5f5;
         }
 
         .dark-mode .header {
