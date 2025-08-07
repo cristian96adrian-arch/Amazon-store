@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tienda Amazon Afiliado</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f2f2f2;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #232f3e;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    h1 {
+      margin: 0;
+    }
+
+    nav {
+      background: #37475a;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: white;
+      padding: 1rem;
+      text-decoration: none;
+      display: block;
+    }
+
+    nav a:hover {
+      background: #485769;
+    }
+
+    .content {
+      padding: 2rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+    }
+
+    .card {
+      background: white;
+      border-radius: 8px;
+      padding: 1rem;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    .card img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 4px;
+    }
+
+    .card a {
+      display: inline-block;
+      margin-top: 0.5rem;
+      color: #0073b1;
+      text-decoration: none;
+    }
+
+    footer {
+      background: #232f3e;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Mi Tienda Afiliada de Amazon</h1>
+    <p>Las mejores selecciones en tecnología, moda, hogar y más</p>
+  </header>
+
+  <nav>
+    <a href="#">📱 Tecnología</a>
+    <a href="#">👕 Moda</a>
+    <a href="#">🏠 Hogar</a>
+    <a href="#">📚 Libros</a>
+    <a href="#">🎮 Videojuegos</a>
+    <a href="#">🧴 Belleza</a>
+    <a href="#">🚗 Autos</a>
+    <a href="#">🎧 Audio</a>
+  </nav>
+
+  <div class="content">
+    <div class="card">
+      <img src="https://m.media-amazon.com/images/I/71k45hZkLmL._AC_SY355_.jpg" alt="Celular"/>
+      <h3>Smartphone Samsung Galaxy</h3>
+      <a href="https://www.amazon.com/dp/B0CJZTRF9Z?tag=TU-ID-AFILIADO" target="_blank">Ver en Amazon</a>
+    </div>
+
+    <div class="card">
+      <img src="https://m.media-amazon.com/images/I/61hTDiGUMxL._AC_SY355_.jpg" alt="Auriculares"/>
+      <h3>Auriculares Sony WH-1000XM4</h3>
+      <a href="https://www.amazon.com/dp/B0863TXGM3?tag=TU-ID-AFILIADO" target="_blank">Ver en Amazon</a>
+    </div>
+
+    <div class="card">
+      <img src="https://m.media-amazon.com/images/I/71W1DdlbwkL._AC_SY355_.jpg" alt="Licuadora Oster"/>
+      <h3>Licuadora Oster</h3>
+      <a href="https://www.amazon.com/dp/B0018BI7Z0?tag=TU-ID-AFILIADO" target="_blank">Ver en Amazon</a>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2025 - Página creada por Cristian como afiliado de Amazon.</p>
+  </footer>
+</body>
+</html>
