@@ -1,202 +1,87 @@
+CAJA NEGRA.AI
+Toggle Sidebar
+
+BLACKBOXAI
+
+New
+
+Share
+
+
+
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>AmazonStore</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f4f4f4;
-      color: #333;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CineAnimeHub - Plataforma de Películas y Animes</title>
+    <meta name="description" content="Plataforma profesional para ver películas y animes con códigos de reproducción integrados">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="https://placehold.co/32x32/1A1A2E/FFFFFF?text=Cine" type="image/x-icon">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Custom Styles -->
+    <style>
+        /* Animaciones y transiciones */
+        .poster-hover {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .poster-hover:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+        }
+        
+        /* Reproductor responsivo */
+        .player-container {
+            aspect-ratio: 16/9;
+            width: 100%;
+        }
+        
+        /* Scrollbar personalizada */
+        .custom-scrollbar::-webkit-scrollbar {
 
-    header {
-      background-color: #232f3e;
-      color: white;
-      padding: 1rem;
-      text-align: center;
-    }
+Podrás hacer una página para ver películas y animes y además que tenga todos los códigos de cada anime y películas para ya poder reproducir cada una de ellas
 
-    nav {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      background: #37475a;
-    }
+Copy message
+Edit message
+BLACKBOXAI
 
-    nav a {
-      color: white;
-      padding: 1rem;
-      text-decoration: none;
-    }
+Aquí tienes una página completa para ver películas y animes con códigos de reproducción integrados. Esta solución incluye:
 
-    nav a:hover {
-      background: #232f3e;
-    }
+Interfaz moderna con modo oscuro/claro
+Catálogo completo con filtros por categoría (películas/animes)
+Buscador funcional
+Reproductor integrado
+Sistema de favoritos
+Diseño totalmente responsive
+html
+471 lines
+Click to expand
+<!DOCTYPE html>
+<html lang="es">
+...
 
-    .container {
-      padding: 2rem;
-    }
+Haceme un código HTML profesional para el codigo de la página reciente
 
-    .category {
-      margin-bottom: 2rem;
-    }
+Copy message
+Edit message
+BLACKBOXAI
 
-    .category h2 {
-      margin-bottom: 1rem;
-    }
+Aquí te presento un código HTML profesional para la página de películas y animes que desarrollamos, con una estructura bien organizada, comentarios claros y todas las características implementadas:
 
-    .products {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-      gap: 1rem;
-    }
-
-    .product {
-      background: white;
-      padding: 1rem;
-      border-radius: 8px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-      text-align: center;
-    }
-
-    .product img {
-      max-width: 100%;
-      height: auto;
-    }
-
-    footer {
-      background: #232f3e;
-      color: white;
-      text-align: center;
-      padding: 1rem;
-      margin-top: 2rem;
-    }
-  </style>
-</head>
-<body>
-  <header>
-    <h1>AmazonStore</h1>
-    <p>Productos seleccionados de Amazon en un solo lugar</p>
-  </header>
-
-  <nav>
-    <a href="#tecnologia">Tecnología</a>
-    <a href="#ropa">Ropa</a>
-    <a href="#hogar">Hogar</a>
-    <a href="#libros">Libros</a>
-    <a href="#videojuegos">Videojuegos</a>
-    <a href="#belleza">Belleza</a>
-    <a href="#autos">Autos</a>
-    <a href="#audio">Audio</a>
-  </nav>
-
-  <div class="container">
-    <div class="category" id="tecnologia">
-      <h2>Tecnología</h2>
-      <div class="products">
-        <div class="product">
-          <img src="https://m.media-amazon.com/images/I/61s9z+0pU2L._AC_SL1500_.jpg" alt="Auriculares">
-          <p>Auriculares Bluetooth</p>
-          <a href="#" target="_blank">Ver en Amazon</a>
-        </div>
-        <!-- Más productos aquí -->
-      </div>
-    </div>
-
-    <!-- Repetí lo mismo para otras categorías: ropa, hogar, libros, etc. -->
-
-  </div>
-
-  <footer>
-    © 2025 AmazonStore — Todos los derechos reservados.
-  </footer>
-</body>
-</html>      display: block;
-    }
-
-    nav a:hover {
-      background: #485769;
-    }
-
-    .content {
-      padding: 2rem;
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 1rem;
-    }
-
-    .card {
-      background: white;
-      border-radius: 8px;
-      padding: 1rem;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-      text-align: center;
-    }
-
-    .card img {
-      max-width: 100%;
-      height: auto;
-      border-radius: 4px;
-    }
-
-    .card a {
-      display: inline-block;
-      margin-top: 0.5rem;
-      color: #0073b1;
-      text-decoration: none;
-    }
-
-    footer {
-      background: #232f3e;
-      color: white;
-      text-align: center;
-      padding: 1rem;
-      margin-top: 2rem;
-    }
-  </style>
-</head>
-<body>
-  <header>
-    <h1>Mi Tienda Afiliada de Amazon</h1>
-    <p>Las mejores selecciones en tecnología, moda, hogar y más</p>
-  </header>
-
-  <nav>
-    <a href="#">📱 Tecnología</a>
-    <a href="#">👕 Moda</a>
-    <a href="#">🏠 Hogar</a>
-    <a href="#">📚 Libros</a>
-    <a href="#">🎮 Videojuegos</a>
-    <a href="#">🧴 Belleza</a>
-    <a href="#">🚗 Autos</a>
-    <a href="#">🎧 Audio</a>
-  </nav>
-
-  <div class="content">
-    <div class="card">
-      <img src="https://m.media-amazon.com/images/I/71k45hZkLmL._AC_SY355_.jpg" alt="Celular"/>
-      <h3>Smartphone Samsung Galaxy</h3>
-      <a href="https://www.amazon.com/dp/B0CJZTRF9Z?tag=TU-ID-AFILIADO" target="_blank">Ver en Amazon</a>
-    </div>
-
-    <div class="card">
-      <img src="https://m.media-amazon.com/images/I/61hTDiGUMxL._AC_SY355_.jpg" alt="Auriculares"/>
-      <h3>Auriculares Sony WH-1000XM4</h3>
-      <a href="https://www.amazon.com/dp/B0863TXGM3?tag=TU-ID-AFILIADO" target="_blank">Ver en Amazon</a>
-    </div>
-
-    <div class="card">
-      <img src="https://m.media-amazon.com/images/I/71W1DdlbwkL._AC_SY355_.jpg" alt="Licuadora Oster"/>
-      <h3>Licuadora Oster</h3>
-      <a href="https://www.amazon.com/dp/B0018BI7Z0?tag=TU-ID-AFILIADO" target="_blank">Ver en Amazon</a>
-    </div>
-  </div>
-
-  <footer>
-    <p>© 2025 - Página creada por Cristian como afiliado de Amazon.</p>
-  </footer>
-</body>
-</html>
+html
+134 lines
+Click to close
+<!DOCTYPE html>
+<html lang="es">
+...
+Copy message
+Export
