@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Finds Premium</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #FF9900;
+            --secondary: #146EB4;
+            --dark: #131A22;
+            --light: #F3F3F3;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .animate-fadein {
+            animation: fadeIn 0.6s ease-out forwards;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+
+        .product-card {
+            transition: all 0.3s ease;
+        }
+
+        .dark-mode {
+            background-color: #121212;
+            color: #f5f5f5;
+        }
+
+        .dark-mode .header {
+            background-color: #1E1E1E;
+        }
+
+        .dark-mode .product-card {
+            background-color: #1E1E1E;
+            border-color: #333;
+        }
+
+        .progress-bar {
+            height: 4px;
+            background-color: var(--primary);
+            width: 0%;
+            transition: width 0.3s;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-sans transition-colors duration-300">
+    <!-- Progress Bar -->
+    <div class="progress-bar fixed top-0 left-0 right-0 z-50"></div>
+
+    <!-- Header -->
+    <header class="header bg-white shadow-sm sticky top-0 z-40 transition-colors duration-300">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-2">
+                    <img src="https://placehold.co/40x40" alt="Logo de Amazon Finds Premium con diseño moderno en naranja y azul" class="h-10">
+                    <h1 class="text-xl font-bold text-gray-800">Amazon<span class="text-orange-500">Finds</span></h1>
+                </div>
+                
+                <div class="flex items-center space-x-4">
+                    <button id="themeToggle" class="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors">
+                        <i class="fas fa-moon text-gray-600 dark:text-yellow-300"></i>
+                    </button>
+                    <button class="relative p-2">
+                        <i class="fas fa-shopping-cart text-gray-600 dark:text-gray-300"></i>
+                        <span class="absolute -top-1 -right-1 bg-orange 500 text-white text-xs rounded-full h-5 w-5 flex items-center justify-center">0</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Search Bar -->
+            <div class="mt-4 relative">
+                <input type="text" placeholder="Busca entre 50,000+ productos..." 
+                    class="w-full px-4 py-2 border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-orange-500 dark:bg-gray-700 dark:border-gray-600">
+                <button class="absolute right-2 top-1/2 transform -translate-y-1/2 bg-orange-500 text-white px-4 py-1 rounded-full hover:bg-orange-600 transition-colors">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-r from-orange-400 to-blue-500 text-white py-12">
+        <div class="container mx-auto px-4 text-center animate-fadein">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">Los mejores
