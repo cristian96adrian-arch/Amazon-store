@@ -1,12 +1,3 @@
-Aquí tienes una página completa para ver películas y animes con códigos de reproducción integrados. Esta solución incluye:
-
-1. Interfaz moderna con modo oscuro/claro
-2. Catálogo completo con filtros por categoría (películas/animes)
-3. Buscador funcional
-4. Reproductor integrado
-5. Sistema de favoritos
-6. Diseño totalmente responsive
-
 ```html
 <!DOCTYPE html>
 <html lang="es">
